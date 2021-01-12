@@ -1,6 +1,8 @@
 import { memo } from 'react';
 
-import '../styles/globals.scss'
+import './index.scss'
+import './../i18n';
+
 import { contexts } from '../contexts';
 
 function AppContent({ render }: any) {
