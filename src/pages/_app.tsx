@@ -1,7 +1,34 @@
-import '../styles/globals.scss'
+import { memo } from 'react';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import '../styles/globals.scss'
+import { contexts } from '../contexts';
+
+function AppContent({ render }: any) {
+  return (
+    <>
+      {
+        render()
+      }
+    </>
+  );
 }
 
-export default MyApp
+const AppContentMemo = memo(AppContent);
+
+function App({ Component, pageProps }) {
+  return (
+    <>
+      {
+        contexts.reverse().reduce((acc, contextItem)=>{
+          return (
+            <contextItem.context {...contextItem.props}>
+              {acc}
+            </contextItem.context>
+          )
+        }, <AppContentMemo render={() => (<Component {...pageProps} />)}/>  )
+      }
+    </>
+  )
+}
+
+export default memo(App);

@@ -7,7 +7,7 @@ import Document, {
 } from 'next/document';
 
 import { ServerStyleSheets } from '@material-ui/core/styles';
-// import theme from './../styles/material';
+import theme from './../styles/material';
 
 export default class CustomDocument extends Document {
   render() {
@@ -19,8 +19,8 @@ export default class CustomDocument extends Document {
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
           <link rel="manifest" href="/favicon/site.webmanifest" />
           <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-          {/* <meta name="msapplication-TileColor" content={theme.palette.primary.main} />
-          <meta name="theme-color" content={theme.palette.primary.main} /> */}
+          <meta name="msapplication-TileColor" content={theme.palette.primary.main} />
+          <meta name="theme-color" content={theme.palette.primary.main} />
         </Head>
 
         <body>
