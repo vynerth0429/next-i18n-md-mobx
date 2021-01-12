@@ -3,6 +3,10 @@ import {
 } from '@material-ui/core/styles';
 import theme from '../styles/material';
 
+import {
+  StoreProvider,
+} from './store-context';
+
 interface IContext {
   context: (props: any) => any,
   props: {
@@ -16,6 +20,10 @@ export const contexts: IContext[] = [
     props: {
       theme: theme
     }
+  },
+  {
+    context: StoreProvider,
+    props: {}
   },
 ];
 

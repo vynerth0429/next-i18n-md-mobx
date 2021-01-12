@@ -10,9 +10,13 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",
     "i18next-xhr-backend": "^3.2.2",
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
+    "mobx-sync": "^3.0.0",
     "next": "10.0.5",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
