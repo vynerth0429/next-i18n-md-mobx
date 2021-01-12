@@ -20,7 +20,12 @@ This boilerplate makes it easier to get up and running with a well-structured Ne
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
